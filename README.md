@@ -1,5 +1,7 @@
 # 👨‍💻 v_to_sha256
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/476b8bdbefe54a2fbe949fc0dcaaeabc)](https://app.codacy.com/gh/V-core9/v_to_sha256?utm_source=github.com&utm_medium=referral&utm_content=V-core9/v_to_sha256&utm_campaign=Badge_Grade_Settings)
+
 🔩 Install using command :
 
     npm install v_to_sha256
