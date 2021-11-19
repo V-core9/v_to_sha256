@@ -1,10 +1,10 @@
 var crypto = require("crypto");
 const hashType = "sha256";
-const vHash = crypto.createHash(hashType);
+const digest = "hex";
 
-const v_to_sha256 = (data) => {
+var v_to_sha256 = (data) => {
   try {
-    return vHash.update(data).digest("hex");
+    return crypto.createHash(hashType).update(data).digest(digest);    
   } catch (error) {
     return false;
   }
