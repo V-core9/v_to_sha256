@@ -1,8 +1,9 @@
 var crypto = require("crypto");
+
 const hashType = "sha256";
 const digest = "hex";
 
-var v_to_sha256 = (value) => {
+var v_to_sha256 = async (value) => {
   try {
     if (typeof value === "number") value = String(value);
     return crypto.createHash(hashType).update(value).digest(digest);    
