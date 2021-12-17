@@ -1,6 +1,6 @@
 {
   "name": "v_to_sha256",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Generates sha256 hash value from a provided string or returns false in case of an error.",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/V-core9/v_to_sha256.git"
   },
-  "keywords": ["sha256","hashing", "sha256 hash"],
-  "author": "",
+  "keywords": [
+    "sha256",
+    "hashing", 
+    "sha256 hash",
+    "sha256 hash generator",
+    "crypto",
+    "v-core9",
+    "security",
+    "password",
+    "password hashing"
+  ],
+  "author": "slavko.vuletic92@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/V-core9/v_to_sha256/issues"

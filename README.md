@@ -14,9 +14,17 @@
 
     const v_to_sha256 = require("v_to_sha256");
 
-    console.log( v_to_sha256("demo_password_123456") )
+    v_to_sha256("demo_password_123456")  //-> returns hash : 4491875b6270ce2dd38068c03e1ce0251e06396cddb5fe87f51fe1024bfceb1a
 
-//-> returns hash : 4491875b6270ce2dd38068c03e1ce0251e06396cddb5fe87f51fe1024bfceb1a
+## ✅ Test Results and Coverage with Jest
+
+![v_to_sha256 Test and Coverage with Jest](coverage.png)
 
 📑 Related links :
-*   [v_to_md5](https://www.npmjs.com/package/v_to_md5) ⏭ md5 hash generator
+*   [v_to_md5](https://www.npmjs.com/package/v_to_md5) ⏭ MD5 hash generator
+*   [v_is_empty_value](https://www.npmjs.com/package/v_is_empty_value) ⏭ check if empty entry
+*   [v_file_system](https://www.npmjs.com/package/v_file_system) ⏭ simple and safe fs module with sync and promises
+*   [v_execute](https://www.npmjs.com/package/v_execute) ⏭ Exec cli commands 
+*   [v_scrolls](https://www.npmjs.com/package/v_scrolls) ⏭ Readme Generator
+*   [v_database](https://www.npmjs.com/package/v_database) ⏭ single database solution 
+*   [v_database_cli](https://www.npmjs.com/package/v_database_cli) ⏭ v_database cli tool
