@@ -1,15 +1,13 @@
 var crypto = require("crypto");
 
-const hashType = "sha256";
-const digest = "hex";
-
 var v_to_sha256 = async (value) => {
-  try {
-    if (typeof value === "number") value = String(value);
-    return crypto.createHash(hashType).update(value).digest(digest);    
-  } catch (error) {
-    return false;
-  }
+  return new Promise((resolve, reject) => {
+    try {
+      resolve((value !== undefined) ? crypto.createHash("sha256").update(String(value)).digest("hex") : false);
+    } catch (e) {
+      reject(e);
+    }
+  });
 };
 
 module.exports = v_to_sha256;
