@@ -1,5 +1,6 @@
 const v_to_sha256 = require("../");
 var faker = require('faker');
+const { notEmpty } = require("v_is_empty_value");
 
 var fakerTypes = Object.keys(faker);
 fakerTypes.forEach(function (type) {
@@ -16,13 +17,15 @@ fakerTypes.forEach(function (type) {
       }
 
       //! Run test if data gets created
-      if (data !== null) {
         test(String(data), async () => {
           var hashVal = await v_to_sha256(data);
           //? Check if hash is not false [that means it failed]
-          expect(hashVal !== false).toBe(true);
+          if (await notEmpty(data)) {
+            expect(hashVal !== false).toBe(true);
+          } else {
+            expect(hashVal).toBe(false);
+          }
         });
-      }
 
     }
   });
