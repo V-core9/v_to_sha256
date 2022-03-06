@@ -1,0 +1,10 @@
+.git
+.gitignore
+node_modules
+package-lock.json
+coverage
+.jshintrc
+.editorconfig
+coverage.png
+jest.config.js
+__tests__
