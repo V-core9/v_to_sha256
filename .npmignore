@@ -8,3 +8,4 @@ coverage
 coverage.png
 jest.config.js
 __tests__
+README.md

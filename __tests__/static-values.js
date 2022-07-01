@@ -1,4 +1,4 @@
-const v_to_sha256 = require("../");
+const v_to_sha256 = require("../source");
 
 
 

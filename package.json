@@ -1,10 +1,11 @@
 {
   "name": "v_to_sha256",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "Generates sha256 hash value from a provided string or returns false in case of an error.",
-  "main": "index.js",
+  "main": "source/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepack": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,6 @@
     "jest": "^27.5.1"
   },
   "dependencies": {
-    "v_is_empty_value": "^1.0.7"
+    "v_is_empty_value": "^1.1.0"
   }
 }
